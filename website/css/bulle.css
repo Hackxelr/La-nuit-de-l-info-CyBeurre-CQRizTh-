@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
+#page-container {
+    position: relative;
+}
+
+:root{
+    --bulle-hover : #065088;
+}
+
+
+.infobulle {
+    position: absolute;
+    width: 400px; /* Largeur de base de l'infobulle */
+    height: 200px;
+    padding: 10px;/* Fond de l'infobulle */
+    color: #ffffff; /* Texte de l'infobulle */
+    border-radius: 8px;
+    transition: 0.5s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Transitions pour le fond et la taille de l'infobulle */
+    overflow: hidden; /* Masquer tout contenu dépassant de l'infobulle */
+    opacity: 0;
+    font-family: 'Rubik Mono One', monospace;
+    border: solid;
+}
+
+.fake-news{
+    color: black;
+    font-size: 24px;
+}
+
+.infobulle:hover {
+    background-color: var(--bulle-hover); /* Nouvelle couleur au survol */
+    transform: scale(1.1); /* Ajustez la valeur pour le niveau de zoom désiré */
+    height: auto;
+    cursor: pointer;
+}
+
+.info-detail {
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0; /* Ajout de l'opacité initiale */
+    transition: opacity 0.5s ease; /* Transition pour l'apparition du texte détaillé */
+    font-family: 'Roboto', sans-serif;
+}
+
+.infobulle:hover .info-detail {
+    opacity: 1;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 0;
+    width: 2px; /* Largeur de la ligne */
+    height: 100vh; /* Hauteur de la ligne égale à la hauteur de la vue */
+    background-color: #000000; /* Couleur de la ligne noire */
+    opacity: 0;
+}
+
+/* Ajout des classes left et right aux lignes */
+.vertical-line.left {
+    left: 40%;
+}
+
+.vertical-line.right {
+    left: 60%;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+

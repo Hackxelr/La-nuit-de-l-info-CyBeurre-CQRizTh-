@@ -1,0 +1,163 @@
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color1 : #2b1055; 
+    --background-color2: #7597de;
+    --font-color : black;
+}
+
+
+header{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    border: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    position: absolute;
+    padding-top: 100dvh;
+    left: 10%;
+    z-index: 1;
+    height: auto;
+    width: 75em;
+}
+
+
+.bi{
+    color: white;
+    height: 16em;
+    width: 16em;
+} 
+
+svg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-width: none; /* Reset max-width to allow full responsiveness */
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: sans-serif;
+    color: var(--font-color);
+
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+
+
+
+.flow{
+    margin-top : 50dvh;
+    margin-bottom: 50dvh;
+    display: flex;
+    justify-content: space-between;
+    border-collapse: collapse;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(var(--background-color1), var(--background-color2), rgb(17, 11, 128), rgba(0, 0, 0, 1));
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+
+html {
+    overflow:   scroll;
+    overflow-x: hidden;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+    }
+
+
+    #infoBox {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #2b1055;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+
+    ul.horizontal-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+    
+      /* Style for list items in a horizontal list */
+      ul.horizontal-list li {
+        margin-right: 10px; /* Adjust spacing between list items */
+        z-index: 2;
+      }
+
+
+      #container {
+        position: relative;
+        width: 300px; /* Ajustez la largeur en fonction de vos besoins */
+      }
+  
+      #personnage, #glacon {
+        position: absolute;
+        padding-top: 300px;
+        margin-left: 50em;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transition: opacity 2s ease-in-out; /* Augmentation de la durée de transition à 2 secondes */
+      }
+  
+      #glacon:hover {
+        opacity: 0; /* Opacité réduite lorsqu'il y a un survol */
+      }

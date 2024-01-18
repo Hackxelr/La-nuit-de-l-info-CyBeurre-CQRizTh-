@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/members.css">
+    <title>Our Team Members</title>
+    <style>
+        body {
+    margin: 0;
+    /*font-family: Georgia, serif;*/
+    font-family: "Gill Sans", sans-serif;
+    background-color: #001f3f; /* Fond bleu nuit */
+    color: #fff; /* Texte blanc */
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    }
+
+.member {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #004080; /* Bleu foncé */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+}
+
+.member p {
+    margin: 0;
+}
+.member-description{
+    margin-bottom: 50px;
+}
+
+.site-credit {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #fff;
+    border-bottom: 2px solid #fff; /* Ajouter une bordure inférieure */
+    padding-bottom: 10px; /* Ajouter un espace sous la bordure */
+}
+
+        .side-image {
+            position: fixed;
+            top: 0;
+            height: 50%;
+            z-index: -1; /* Pour envoyer les images à l'arrière-plan */
+            width: 20%; /* Reduire la largeur de l'image à la moitié */
+        }
+
+        .left-image {
+            top:400px;
+            left: 100px;
+        }
+
+        .right-image {
+            top:400px;
+            right: 100px;
+        }
+
+        .third-image {
+            top:400px;
+            right: 300px;
+        }
+
+        .fourth-image {
+            top:460px;
+            right: 860px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+        <p class="site-credit">Site créé par :</p>
+    <div class="team-members">
+        <div class="member">
+            <img src="img/evan.png" alt="Member 1">
+            <p>Evan</p>
+        </div>
+        <div class="member-description">Vote plus à droite que ton tonton bourré</div>
+        <div class="member">
+            <img src="img/saad.png" alt="Member 2">
+            <p>Saad</p>
+        </div>
+        <div class="member-description">The tiramisu specialist</div>
+        <div class="member">
+            <img src="img/noe.jpg" alt="Member 3">
+            <p>Noé</p>
+        </div>
+        <div class="member-description">Un couscous, un ordi, une connexion et c'est parti</div>
+        <div class="member">
+            <img src="img/axel.png" alt="Member 4">
+            <p>Axel</p>
+        </div>
+        <div class="member-description">A eu son permis à la 3e tentative</div>
+        <div class="member">
+            <img src="img/edouard.jpg" alt="Member 5">
+            <p>Edouard</p>
+        </div>
+        <div class="member-description">Peek top 1560 #EU Valorant</div>
+        <div class="member">
+            <img src="img/jacques.png" alt="Member 6">
+            <p>Jacques</p>
+        </div>
+        <div class="member-description">Tekken Sweatlord</div>
+    </div>
+
+</body>
+</html>
+
+

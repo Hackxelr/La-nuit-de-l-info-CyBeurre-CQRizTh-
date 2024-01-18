@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik+Mono+One&display=swap');
+
+#rabbit {
+    display: block;
+    margin: auto;
+}
+
+h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
